@@ -1,0 +1,16 @@
+name: Clean Commits
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Clean Commits
+        uses: braydend/clean-commits@1.1.3
