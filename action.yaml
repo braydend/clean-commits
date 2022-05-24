@@ -5,3 +5,5 @@ runs:
   steps:
     - shell: bash
       run: git log | grep WIP
+    - shell: bash
+      run: git log | grep fixup
